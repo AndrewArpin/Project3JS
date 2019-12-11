@@ -1,0 +1,17 @@
+{
+"companyName" : "I Scream Inc.",
+"headOffice" : "South Pole, Anatarctica",
+"established" : 2001,
+"active" : true,
+"topFlavours" : [
+  {
+    "name" : "Monstrous Mint",
+    "calories" : 800,
+    "type" : "ice cream", 
+    "ingredients" : [
+      "peppermint cream",
+      "dark chocolate chips",
+      "vanilla"
+    ],
+  }
+}
