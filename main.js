@@ -1,20 +1,24 @@
-//Step One - create variables that store a reference to header and section elements
 let header = document.querySelector('header');
 let section = document.querySelector('section');
 
-//Step Two - create a variable to store request URL
-let requestURL = "";
+let requestURL = "https://AndrewArpin.github.io/JSONmon/coolThings.json";
 
-// Step Three - create a new XHR object
 let request = new XMLHttpRequest();
 
-//Step Four - open a new request, using the open method
 request.open('GET', requestURL);
-
-//Step Five - set up the request to accept JSON
 
 request.responseType = 'json';
 
-//Step Six - send the request using the send method
-
 request.send();
+
+function info(jsonObj) {
+  let headerH1 = document.createElement('h1');
+  headerH1.textContent = jsonObj['Website'];
+  header.appendChild(headerH1);
+
+//grab the company info and established date and add a new paragraph to your HTML that displays this info
+
+  let headerPara = document.createElement('p');
+  headerPara.textContent = 'Welcome to' + jsonObj['Website'] + '';
+  header.appendChild(headerPara);
+}
