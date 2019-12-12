@@ -12,7 +12,7 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  let iScreamInc = request.response; 
+  let coolThings = request.response; 
 console.log(coolThings);
 populateHeader(coolThings);
 topFlavours(coolThings);
