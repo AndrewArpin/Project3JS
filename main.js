@@ -1,7 +1,7 @@
 let header = document.querySelector('header');
 let section = document.querySelector('section');
 
-let requestURL = "https://AndrewArpin.github.io/JSONmon/coolThings.json";
+let requestURL = "https://edgeonyx.github.io/Project3JS/coolThings.json";
 
 let request = new XMLHttpRequest();
 
@@ -10,6 +10,13 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 
 request.send();
+
+request.onload = function() {
+  let iScreamInc = request.response; 
+console.log(coolThings);
+populateHeader(coolThings);
+topFlavours(coolThings);
+}
 
 function info(jsonObj) {
   let headerH1 = document.createElement('h1');
