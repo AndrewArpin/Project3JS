@@ -13,9 +13,7 @@ request.send();
 
 request.onload = function() {
   let coolThings = request.response; 
-console.log(coolThings);
-populateHeader(coolThings);
-topFlavours(coolThings);
+  console.log(coolThings);
 }
 
 function info(jsonObj) {
