@@ -12,8 +12,10 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  let coolThings = request.response; 
+  let coolThings = request.response;
   console.log(coolThings);
+  info(coolThings);
+  coolestThings(coolThings);
 }
 
 function info(jsonObj) {
@@ -26,4 +28,44 @@ function info(jsonObj) {
   let headerPara = document.createElement('p');
   headerPara.textContent = 'Welcome to' + jsonObj['Website'] + '';
   header.appendChild(headerPara);
+}
+
+
+function coolestThings(jsonObj) {
+
+  //bind top flavours object to a variables
+  let items = jsonObj['items'];
+
+  for (let i = 0; i < items.length; i++) {
+    //create a few different elements
+    let article = document.createElement('article');
+    let h2 = document.createElement('h2');
+    let img = document.createElement('img');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let list = document.createElement('ul');
+
+    //grab the data associated with image to set the src and alt attribute
+    img.setAttribute('src', 'https://edgeonyx.github.io/Project3JS/coolThings.json' + items[i].image);
+    img.setAttribute('alt', items[i].image );
+
+    h2.textContent = items[i].name;
+    p1.textContent = items[i].buy;
+    p2.textContent = 'This product is sold by: ' + items[i].seller;
+
+    let ingredients = items[i].ingredients;
+    for(let j = 0; j < ingredients.length; j++ ) {
+      let listItem = document.createElement('li');
+      listItem.textContent = ingredients[j];
+      list.appendChild(listItem);
+    }
+
+    article.appendChild(img);
+    article.appendChild(h2);
+    article.appendChild(p1);
+    article.appendChild(p2);
+    article.appendChild(list);
+    section.appendChild(article);
+
+  }
 }
