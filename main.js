@@ -1,7 +1,7 @@
 let header = document.querySelector('header');
 let section = document.querySelector('section');
 
-let requestURL = "https://edgeonyx.github.io/coolThings.json";
+let requestURL = "https://edgeonyx.github.io/Project3JS/coolThings.json";
 
 let request = new XMLHttpRequest();
 
