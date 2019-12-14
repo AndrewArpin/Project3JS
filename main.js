@@ -23,7 +23,6 @@ function info(jsonObj) {
   headerH1.textContent = jsonObj['Website'];
   header.appendChild(headerH1);
 
-//grab the company info and established date and add a new paragraph to your HTML that displays this info
 
   let headerPara = document.createElement('p');
   headerPara.textContent = 'Welcome to' + jsonObj['Website'] + '';
@@ -33,11 +32,11 @@ function info(jsonObj) {
 
 function coolestThings(jsonObj) {
 
-  //bind top flavours object to a variables
+
   let items = jsonObj['items'];
 
   for (let i = 0; i < items.length; i++) {
-    //create a few different elements
+
     let article = document.createElement('article');
     let h2 = document.createElement('h2');
     let img = document.createElement('img');
@@ -45,7 +44,6 @@ function coolestThings(jsonObj) {
     let p2 = document.createElement('p');
     let list = document.createElement('ul');
 
-    //grab the data associated with image to set the src and alt attribute
     img.setAttribute('src', 'https://edgeonyx.github.io/Project3JS/coolThings.json' + items[i].image);
     img.setAttribute('alt', items[i].image );
 
@@ -53,8 +51,8 @@ function coolestThings(jsonObj) {
     p1.textContent = items[i].buy;
     p2.textContent = 'This product is sold by: ' + items[i].seller;
 
-    let ingredients = items[i].ingredients;
-    for(let j = 0; j < ingredients.length; j++ ) {
+    let description = items[i].descriptions;
+    for(let j = 0; j < description.length; j++ ) {
       let listItem = document.createElement('li');
       listItem.textContent = ingredients[j];
       list.appendChild(listItem);
