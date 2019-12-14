@@ -52,7 +52,7 @@
     ],
     "image" : "HumanBones.jpg"
   },
-   {
+  {
     "name" : "Gourmet Peanut Butter & Jelly",
     "buy" : "You can buy this product on amazon!",
     "seller" : "Wallmonkeys",
@@ -64,4 +64,3 @@
   }
  ]
 }
-
