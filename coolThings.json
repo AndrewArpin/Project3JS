@@ -7,10 +7,8 @@
      "seller" : "Bug Sales",
      "descriptions" : [
        "12.20 CAD",
-       "Includes a Ladybug educational sheet with Release Tips, Release Rates, Ladybug Fun Facts and FAQ's",
+       "Includes a Ladybug educational sheet with Release",
        "1500 Live Ladybugs, Live Delivery Guaranteed!!",
-       "Ladybugs are general predators that feed on a variety of slow-moving insects including Aphids, Moth eggs, Mites, Scales, Thrips, Leaf Hoppers, Mealybugs, Chinch Bugs, Asparagus Beetle larvae, Whitefly and others.",
-       "Ladybugs are good bugs great for kids, birthday parties, school projects!"
      ],
      "image" : "ladybugs.jpg"
   },
@@ -22,7 +20,6 @@
     "descriptions" : [
       "29.95 associated",
       "Keep your tissues close at hand with the help of your trusty feline friend.",
-      "You are certain to get loads of laughs and visitors to your powder room or office will love to grab a tissue from this quirky cat."
     ],
     "image" : "catTissue.jpg"
   },
@@ -33,8 +30,7 @@
     "seller" : "Wallmonkeys",
     "descriptions" : [
       "21.96 CAD + 9.99 shipping",
-      "Removable and repositionable with no sticky residue. Perfect for nurseries, apartments, dorm rooms, and businesses. Wall decal stickers are mess-free, no paint, no glue/paste, no residue.",
-      "Our decals can be applied on most flat surfaces, including slightly textured walls, mirrors, or any smooth surface. Unlike lower priced competitors, ALL Wallmonkeys decals are printed FRESH for you, and did not spend months in transit from overseas. All orders print and ship within 24 hours from our production facility in Gaithersburg, Maryland"
+      "Removable and repositionable with no sticky residue. Perfect for nurseries!",
     ],
     "image" : "Seniors.jpg"
   },
@@ -47,8 +43,6 @@
       "21.96 CAD + 9.99 shipping",
       "Real Human Bone",
       "Excellent Cadaver & Teaching Material",
-      "Professionally Prepared",
-      "Size, color and shape will vary"
     ],
     "image" : "HumanBones.jpg"
   },
