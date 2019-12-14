@@ -52,8 +52,8 @@
     ],
     "image" : "HumanBones.jpg"
   },
-  {
-    "name" : "Real Human Finger Bones!!?",
+   {
+    "name" : "Gourmet Peanut Butter & Jelly",
     "buy" : "You can buy this product on amazon!",
     "seller" : "Wallmonkeys",
     "descriptions" : [
@@ -64,3 +64,4 @@
   }
  ]
 }
+
