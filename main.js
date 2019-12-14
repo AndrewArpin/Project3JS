@@ -44,7 +44,7 @@ function coolestThings(jsonObj) {
     let p2 = document.createElement('p');
     let list = document.createElement('ul');
 
-    img.setAttribute('src', 'https://edgeonyx.github.io/Project3JS/images' + items[i].image);
+    img.setAttribute('src', 'https://edgeonyx.github.io/Project3JS/images/' + items[i].image);
     img.setAttribute('alt', items[i].image );
 
     h2.textContent = items[i].name;
