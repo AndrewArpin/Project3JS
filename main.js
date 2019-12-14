@@ -20,12 +20,12 @@ request.onload = function() {
 
 function info(jsonObj) {
   let headerH1 = document.createElement('h1');
-  headerH1.textContent = jsonObj['Website'];
+  headerH1.textContent = jsonObj['Website' + "!"];
   header.appendChild(headerH1);
 
 
   let headerPara = document.createElement('p');
-  headerPara.textContent = 'Welcome to' + jsonObj['Website'] + '';
+  headerPara.textContent = 'Welcome to ' + jsonObj['Website'] + 'the site with the wackiest deals on the internet!';
   header.appendChild(headerPara);
 }
 
@@ -62,7 +62,7 @@ function coolestThings(jsonObj) {
     article.appendChild(h2);
     article.appendChild(p1);
     article.appendChild(p2);
-    article.appendChild(list); 
+    article.appendChild(list);
     section.appendChild(article);
 
   }
