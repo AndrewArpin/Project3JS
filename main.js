@@ -54,7 +54,7 @@ function coolestThings(jsonObj) {
     let description = items[i].descriptions;
     for(let j = 0; j < description.length; j++ ) {
       let listItem = document.createElement('li');
-      listItem.textContent = ingredients[j];
+      listItem.textContent = description[j];
       list.appendChild(listItem);
     }
 
