@@ -40,7 +40,6 @@ function coolestThings(jsonObj) {
     let article = document.createElement('article');
     let h2 = document.createElement('h2');
     let img = document.createElement('img');
-    let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let list = document.createElement('ul');
 
@@ -48,7 +47,6 @@ function coolestThings(jsonObj) {
     img.setAttribute('alt', items[i].image );
 
     h2.textContent = items[i].name;
-    p1.textContent = items[i].buy;
     p2.textContent = 'This product is sold by: ' + items[i].seller;
 
     let description = items[i].descriptions;
@@ -60,7 +58,6 @@ function coolestThings(jsonObj) {
 
     article.appendChild(img);
     article.appendChild(h2);
-    article.appendChild(p1);
     article.appendChild(p2);
     article.appendChild(list);
     section.appendChild(article);
