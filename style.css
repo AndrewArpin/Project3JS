@@ -6,7 +6,9 @@
  @charset "utf-8";
 
  body {
- 	font-size: 150%;
+  font-family: font-family: Tahoma, Verdana, Segoe, sans-serif;
+  background-image: url(images/background.jpg);
+ 	font-size: 120%;
  	line-height: 1.4;
  	width: 1350px;
  	margin-left: 10%;
@@ -36,12 +38,14 @@
  	margin-bottom: 5rem;
  }
  section article {
+   background-color: white;
  	border: 1px solid black;
  	box-shadow: 0 2px 14px grey;
  	padding: 2.5%;
  	width: 30%
  }
  article img {
+
  	display: block;
  	height: 220px;
  	width: 220px;
@@ -55,6 +59,6 @@
  }
 
  h2 {
-   font-size: 2.5rem;
+   font-size: 1.5rem;
    margin-bottom: 10px;
  }
